@@ -20,7 +20,9 @@ const AuthLoayout = () => {
     }else{
       let pastUserData={mail,password}
       let r=await fetch(`${API_URL}/login`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(pastUserData)})
+      console.log(r);
       let res=await r.json()
+      console.log(res)
       if(res===false){
         console.log("Not exist");
         return ;
