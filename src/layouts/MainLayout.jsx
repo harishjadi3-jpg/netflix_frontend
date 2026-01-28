@@ -7,6 +7,7 @@ import heroBanner from '../assets/background_banner.jpg'
 import heroTitle from '../assets/hero_title.png'
 import playIcon from '../assets/play_icon.png'
 import infoIcon from '../assets/info_icon.png'
+import bgImage from '/hero_banner.jpg'
 const MainLayout = () => {
   const navigate=useNavigate();
   return (
@@ -15,7 +16,7 @@ const MainLayout = () => {
       <div className="
     h-[70vh] sm:h-[80vh] md:h-screen
     bg-no-repeat bg-center
-    bg-cover" style={{ backgroundImage: `url(${heroBanner})` }}>
+    bg-cover" style={{ backgroundImage: `url(${bgImage})` }}>
         <div className="image w-[90%] sm:w-[70%] md:w-[40%] lg:w-[30%] text-white pl-4 flex flex-col justify-end flex-start h-[80%] pd-0">
           <img src={heroTitle} alt="hero logo" className=''/>
           <p>Discovering his ties to a secreat ancient order,a young man living in modern instanbul embarks on a request to save the city from an immortal enemy.</p>
