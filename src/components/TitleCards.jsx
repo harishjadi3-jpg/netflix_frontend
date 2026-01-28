@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const TitleCards = (props) => {
   const navigate=useNavigate();
   const [moviesData,setMoviesData]=useState([]);
-  const TMDB = import.meta.env.VITE_TMDB_API_KEY;
   const options = {
   method: 'GET',
   headers: {
