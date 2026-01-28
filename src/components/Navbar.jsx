@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Netflix_logo from '../assets/logo.png'
+import searchIcon from '../assets/search_icon.svg'
+import bellIcon from '../assets/bell_icon.svg'
+import profileImg from '../assets/profile_img.png'
+import caretIcon from '../assets/caret_icon.svg'
 
 const Navbar = (props) => {
   const [showLogout, setShowLogout] = useState(false)
@@ -41,7 +45,7 @@ const Navbar = (props) => {
                 dehaze
               </span>
               <img
-                src="./src/assets/logo.png"
+                src={Netflix_logo}
                 alt="Netflix Logo"
                 className="h-7 md:h-9 cursor-pointer"
               />
@@ -56,7 +60,7 @@ const Navbar = (props) => {
             </div>
             <div className="ml-auto flex items-center gap-4">
               <img
-                src="./src/assets/search_icon.svg"
+                src={searchIcon}
                 alt="search"
                 className="h-5 cursor-pointer"
               />
@@ -64,7 +68,7 @@ const Navbar = (props) => {
                 Children
               </span>
               <img
-                src="./src/assets/bell_icon.svg"
+                src={bellIcon}
                 alt="bell"
                 className="hidden md:block h-5 cursor-pointer"
               />
@@ -74,12 +78,12 @@ const Navbar = (props) => {
                   onClick={() => setShowLogout(!showLogout)}
                 >
                   <img
-                    src="./src/assets/profile_img.png"
+                    src={profileImg}
                     alt="profile"
                     className="h-7"
                   />
                   <img
-                    src="./src/assets/caret_icon.svg"
+                    src={caretIcon}
                     alt="caret"
                     className="hidden md:block"
                   />
