@@ -1,4 +1,8 @@
 import React from 'react'
+import facebookLogo from '../assets/facebook_icon.png'
+import instagramLogo from '../assets/instagram_icon.png'
+import youtubeLogo from '../assets/youtube_icon.png'
+import twitterLogo from '../assets/twitter_icon.png'
 const Footer = (props) => {
   return (
     <div className='flex border-white items-center justify-center'>
@@ -8,7 +12,7 @@ const Footer = (props) => {
             <li>
               <a href='https://www.facebook.com/netflix'>
               <img
-                src="./src/assets/facebook_icon.png"
+                src={facebookLogo}
                 alt="facebook"
                 className="h-6 w-6 cursor-pointer hover:scale-110 transition"
               />
@@ -17,7 +21,7 @@ const Footer = (props) => {
             <li>
               <a href='https://www.instagram.com/netflix/'>
               <img
-                src="./src/assets/instagram_icon.png"
+                src={instagramLogo}
                 alt="instagram"
                 className="h-6 w-6 cursor-pointer hover:scale-110 transition"
               />
@@ -26,7 +30,7 @@ const Footer = (props) => {
             <li>
               <a href='https://www.youtube.com/@Netflix'>
               <img
-                src="./src/assets/youtube_icon.png"
+                src={youtubeLogo}
                 alt="youtube"
                 className="h-6 w-6 cursor-pointer hover:scale-110 transition"
               />
@@ -35,7 +39,7 @@ const Footer = (props) => {
             <li>
               <a href='https://twitter.com/netflix'>
               <img
-                src="./src/assets/twitter_icon.png"
+                src={twitterLogo}
                 alt="twitter"
                 className="h-6 w-6 cursor-pointer hover:scale-110 transition"
               />

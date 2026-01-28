@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react'
 import Navbar from '../components/Navbar'
 import { useNavigate } from 'react-router-dom';
-// rememver password checking method should be POST
+import bgImage from '../assets/background_banner.jpg'
 const AuthLoayout = () => {
   const API_URL=import.meta.env.VITE_API_URL;
   const [signed, setSigned] = useState(false);
@@ -36,7 +36,7 @@ const AuthLoayout = () => {
       <Navbar title="login" setSigned={setSigned}/>
       <div
         className="h-screen bg-cover"
-        style={{ backgroundImage: "url(./src/assets/background_banner.jpg)" }}
+        style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className='w-full h-full flex justify-center items-center'>
           <div className="bg-black/70 md:w-[30%] w-[70%]  flex flex-col border rounded-md gap-3 pb-3">

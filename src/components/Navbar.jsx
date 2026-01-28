@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Netflix_logo from '../assets/logo.png'
 
 const Navbar = (props) => {
   const [showLogout, setShowLogout] = useState(false)
@@ -10,7 +11,7 @@ const Navbar = (props) => {
       {props.title == "login" && (
         <nav className="fixed top-0 w-full h-16 flex items-center justify-between px-6 md:px-12  ">
           <img
-            src="./src/assets/logo.png"
+            src={Netflix_logo}
             alt="Netflix Logo"
             className="h-8 md:h-10 cursor-pointer"
           />
